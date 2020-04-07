@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Cell" rowHeight="259" id="KGk-i7-Jjw" customClass="ArticleCell" customModule="News_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="259"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="258.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="news" translatesAutoresizingMaskIntoConstraints="NO" id="6V8-5D-B9y">
+                        <rect key="frame" x="9" y="9" width="396" height="188"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="188" id="TBw-SD-1JY"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Article1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SRD-Re-27p" customClass="MarqueeLabel" customModule="MarqueeLabel">
+                        <rect key="frame" x="20" y="212" width="374" height="31"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="31" id="wBN-S1-uvF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="SRD-Re-27p" secondAttribute="bottom" constant="15.5" id="1cX-UC-3bz"/>
+                    <constraint firstItem="6V8-5D-B9y" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="9" id="LDW-2t-sLa"/>
+                    <constraint firstItem="6V8-5D-B9y" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="9" id="jBk-CM-4Ws"/>
+                    <constraint firstAttribute="trailing" secondItem="6V8-5D-B9y" secondAttribute="trailing" constant="9" id="kK0-4c-Egr"/>
+                    <constraint firstItem="SRD-Re-27p" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="mMc-08-obw"/>
+                    <constraint firstItem="SRD-Re-27p" firstAttribute="top" secondItem="6V8-5D-B9y" secondAttribute="bottom" constant="15" id="mNG-at-4zl"/>
+                    <constraint firstAttribute="trailing" secondItem="SRD-Re-27p" secondAttribute="trailing" constant="20" id="tMj-qn-E2c"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.23529411759999999" green="0.92941176469999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="ArticleCover" destination="6V8-5D-B9y" id="svt-LI-9RK"/>
+                <outlet property="Cell" destination="H2p-sc-9uM" id="7oh-5g-MQH"/>
+                <outlet property="TXTArticleName" destination="SRD-Re-27p" id="NOF-fB-XeJ"/>
+            </connections>
+            <point key="canvasLocation" x="673.91304347826087" y="140.95982142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="news" width="350.5" height="224.5"/>
+    </resources>
+</document>
